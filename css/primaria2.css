@@ -1,0 +1,204 @@
+/* /css/primaria2.css */
+
+body {
+    font-family: 'Comic Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a, ul li .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    background-color: #333;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul li a:hover, ul li .dropbtn:hover {
+    background-color: #575757;
+    transform: scale(1.05);
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    text-align: left;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.dropdown-content a {
+    color: rgb(16, 93, 218);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #63afff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.ejercicio {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.ejercicio img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInZoom 1s ease forwards;
+    animation-delay: 1.5s;
+}
+
+.ejercicio h2 {
+    text-align: center;
+    color: #555;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.ejercicio p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 2.5s;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 3s;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.resultado, .explicacion {
+    text-align: center;
+    margin-top: 10px;
+    display: none; /* Oculta las explicaciones por defecto */
+}
+
+.explicacion {
+    background-color: #ffef96; /* Soft yellow background */
+    color: #333; /* Dark text color */
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ffd700; /* Gold border */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.explicacion:hover {
+    background-color: #fff5cc; /* Lighter yellow on hover */
+    color: #000; /* Darker text color on hover */
+}
+
+.mensaje-motivacional {
+    margin-top: 10px;
+    font-style: italic;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInZoom {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

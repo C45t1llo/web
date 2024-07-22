@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica / Conversor de Números / Análisis de Texto / Manejo de Arreglos</title>
+    <link rel="stylesheet" href="/css/ho.css">
+</head>
+<body>
+    <ul>
+        <li><a href="/inicio.html">Inicio</a></li>
+        <li class="dropdown">
+            <button class="dropbtn">Más Niveles</button>
+            <div class="dropdown-content">
+                <a href="/pages/segundaria.html">Secundaria</a>
+                <a href="/pages/universidad.html">Universidad</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <button class="dropbtn">Más Opciones</button>
+            <div class="dropdown-content">
+                <a href="/pages/sobreNosotros.html">Acerca de Nosotros</a>
+            </div>
+        </li>
+    </ul>
+    <div id="particles-js"></div>
+
+
+    <!-- Contenido de la Calculadora Básica -->
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendOperator('/')">/</button>
+            <button onclick="appendOperator('*')">*</button>
+            <button onclick="appendOperator('-')">-</button>
+            
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="appendOperator('+')">+</button>
+
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="calculate()">=</button>
+
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="appendNumber('.')">.</button>
+        </div>
+    </div>
+
+    <!-- Contenido del Conversor de Números -->
+    <div class="converter">
+        <h1>Conversor de Números</h1>
+        <div class="conversion">
+            <h2>Binario a Decimal</h2>
+            <input type="text" id="binaryToDecimalInput" placeholder="Número binario">
+            <button onclick="convertBinaryToDecimal()">Convertir</button>
+            <p id="binaryToDecimalResult"></p>
+        </div>
+        <div class="conversion">
+            <h2>Decimal a Binario</h2>
+            <input type="text" id="decimalToBinaryInput" placeholder="Número decimal">
+            <button onclick="convertDecimalToBinary()">Convertir</button>
+            <p id="decimalToBinaryResult"></p>
+        </div>
+        <div class="conversion">
+            <h2>Binario a Hexadecimal</h2>
+            <input type="text" id="binaryToHexInput" placeholder="Número binario">
+            <button onclick="convertBinaryToHex()">Convertir</button>
+            <p id="binaryToHexResult"></p>
+        </div>
+        <div class="conversion">
+            <h2>Hexadecimal a Binario</h2>
+            <input type="text" id="hexToBinaryInput" placeholder="Número hexadecimal">
+            <button onclick="convertHexToBinary()">Convertir</button>
+            <p id="hexToBinaryResult"></p>
+        </div>
+    </div>
+
+    <!-- Contenido de Análisis de Texto -->
+    <div class="text-analyzer">
+        <h1>Análisis de Texto</h1>
+        
+        <div class="section">
+            <h2>Ingresar Texto</h2>
+            <textarea id="textInput" rows="5" placeholder="Escribe aquí tu texto..."></textarea>
+            <button onclick="analyzeText()">Analizar Texto</button>
+            <p id="textAnalysisResult"></p>
+        </div>
+        
+        <div class="section">
+            <h2>Invertir Cadena</h2>
+            <input type="text" id="stringInput" placeholder="Escribe una cadena de texto...">
+            <button onclick="reverseString()">Invertir</button>
+            <p id="reversedStringResult"></p>
+        </div>
+        
+        <div class="section">
+            <h2>Comparar Frases</h2>
+            <input type="text" id="phrase1" placeholder="Escribe la primera frase...">
+            <input type="text" id="phrase2" placeholder="Escribe la segunda frase...">
+            <button onclick="comparePhrases()">Comparar</button>
+            <p id="phraseComparisonResult"></p>
+        </div>
+    </div>
+
+    <!-- Contenido de Manejo de Arreglos -->
+    <div class="container">
+        <h1>Manejo de Arreglos</h1>
+        
+        <div>
+            <label for="inputArray">Ingresa un arreglo de números separados por comas:</label>
+            <input type="text" id="inputArray" placeholder="Ej: 1, 2, 3, 4, 5">
+            <button onclick="calcularResultados()">Calcular</button>
+        </div>
+        
+        <div id="results">
+            <h2>Resultados:</h2>
+            <div id="primeNumbers"></div>
+            <div id="perfectNumbers"></div>
+            <div id="average"></div>
+            <div id="mode"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Roosvelt Castillo</p>
+    </footer>
+    <script src="/js/univerisidad.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="/js/hol.js"></script>
+
+</body>
+</html>

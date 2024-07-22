@@ -1,0 +1,330 @@
+/* Estilos para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+}
+
+/* Contenedor de partículas */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca el contenedor detrás del contenido */
+    background: #99fff088; /* Fondo oscuro para el contenedor de partículas */
+    pointer-events: none; /* Asegura que el contenedor de partículas no interfiera con el contenido */
+}
+
+/* Estilos generales para los contenedores */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    background: transparent; /* Fondo transparente */
+}
+
+.container:hover {
+    background: #f8f9fa; /* Fondo claro al pasar el ratón */
+}
+
+.container h1 {
+    color: #6c757d;
+    font-size: 28px;
+    border-bottom: 2px solid #6c757d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.container:hover h1 {
+    color: #495057;
+}
+
+.container p {
+    color: #333333;
+    transition: color 0.3s ease;
+}
+
+.container:hover p {
+    color: #6c757d;
+}
+
+.container ul {
+    padding-left: 20px;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el menú de navegación */
+ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #f7f7f7;
+    border-bottom: 3px solid #adb5bd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ul li a {
+    color: #adb5bd;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #868e96;
+}
+
+/* Estilos para los botones desplegables */
+.dropbtn {
+    background-color: #ffc107;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #e85d04;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    width: 150px;
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: #333333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para la calculadora */
+.calculator {
+    margin-top: 20px;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.calculator #display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.calculator .buttons button {
+    padding: 15px 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffc107;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.calculator .buttons button:hover {
+    background-color: #e85d04;
+}
+
+/* Estilos para el conversor de números */
+.converter {
+    margin-top: 20px;
+    padding: 20px;
+    background: transparent; /* Fondo transparente */
+    box-shadow: none; /* Elimina la sombra */
+    border-radius: 10px;
+}
+
+.converter h1 {
+    color: #1b1e23;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.converter .conversion {
+    margin-bottom: 20px;
+}
+
+.converter .conversion h2 {
+    color: #333333;
+    font-size: 20px;
+}
+
+.converter .conversion input[type="text"],
+.converter .conversion button {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.converter .conversion button {
+    background-color: #ffc107;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.converter .conversion button:hover {
+    background-color: #e85d04;
+}
+
+.converter .conversion p {
+    margin-top: 10px;
+}
+
+/* Estilos para el analizador de texto */
+.text-analyzer {
+    margin-top: 20px;
+    padding: 20px;
+    background: transparent; /* Fondo transparente */
+    box-shadow: none; /* Elimina la sombra */
+    border-radius: 10px;
+}
+
+.text-analyzer h1 {
+    color: #1b1e23;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.text-analyzer .section {
+    margin-bottom: 20px;
+}
+
+.text-analyzer .section h2 {
+    color: #333333;
+    font-size: 20px;
+}
+
+.text-analyzer .section textarea,
+.text-analyzer .section input[type="text"],
+.text-analyzer .section button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.text-analyzer .section button {
+    background-color: #ffc107;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.text-analyzer .section button:hover {
+    background-color: #e85d04;
+}
+
+.text-analyzer .section p {
+    margin-top: 10px;
+}
+
+/* Estilos para el manejo de arreglos */
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    background: transparent; /* Fondo transparente */
+    box-shadow: none; /* Elimina la sombra */
+    border-radius: 10px;
+}
+
+.container label,
+.container input[type="text"],
+.container button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container input[type="text"],
+.container button {
+    padding: 10px;
+    width: calc(100% - 20px);
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container button {
+    background-color: #ffc107;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #e85d04;
+}
+
+.container #results {
+    margin-top: 20px;
+}
+
+.container #results h2 {
+    color: #333333;
+    font-size: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

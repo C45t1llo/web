@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educación Interactiva</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/segundaria.css">
+
+</head>
+<body>
+    <li><a href="/inicio.html">Inicio</a></li>
+    <li class="dropdown">
+        <button class="dropbtn">Más Niveles</button>
+        <div class="dropdown-content">
+            <a href="/pages/primaria.html">Primaria</a>
+            <a href="/pages/universidad.html">Universidad</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <button class="dropbtn">Más Opciones</button>
+        <div class="dropdown-content">
+            <a href="/pages/sobreNosotros.html">Acerca de Nosotros</a>
+        </div>
+    </li>
+</ul>
+    <div id="particles-js"></div>
+
+    <header>
+        <h1>Educación Interactiva</h1>
+    </header>
+
+    <div class="container">
+        <!-- Sección de Identificar Patrones y Repeticiones -->
+        <section id="pattern">
+            <h2>Identificar Patrones y Repeticiones</h2>
+            <label for="sequenceInput">Secuencia (separada por comas):</label>
+            <input type="text" id="sequenceInput" placeholder="Ej. 3, 6, 9, 3, 15, 3" />
+            <label for="numberToFind">Número a buscar:</label>
+            <input type="number" id="numberToFind" placeholder="Ingresa el número" />
+            <button onclick="contarRepeticiones()">Contar Repeticiones</button>
+            <div id="patternResult" class="result"></div>
+        </section>
+
+        <!-- Sección de Sumar Números Naturales -->
+        <section id="calculator">
+            <h2>Sumar Números Naturales</h2>
+            <label for="number">Ingresa un número entero positivo:</label>
+            <input type="number" id="number" min="1" required>
+            <button onclick="calculateSum()">Calcular Suma</button>
+            <p id="result" class="result"></p>
+        </section>
+
+        <!-- Sección de Calcular Factorial -->
+        <section id="factorial">
+            <h2>Calcular Factorial</h2>
+            <label for="factorialInput">Ingresa un número entero positivo:</label>
+            <input type="number" id="factorialInput" min="0" required>
+            <button onclick="calculateFactorial()">Calcular Factorial</button>
+            <p id="factorialResult" class="result"></p>
+        </section>
+
+        <!-- Sección de Números Pares e Impares en un Rango -->
+        <section id="parity">
+            <h2>Números Pares e Impares en un Rango</h2>
+            <label for="startNumber">Número inicial:</label>
+            <input type="number" id="startNumber" min="0" required>
+            <label for="endNumber">Número final:</label>
+            <input type="number" id="endNumber" min="0" required>
+            <button onclick="findEvenOddNumbers()">Mostrar Números Pares e Impares</button>
+            <div id="parityResult" class="result"></div>
+        </section>
+
+        <!-- Sección de Tabla de Multiplicar y/o Sumar -->
+        <section id="table">
+            <h2>Tabla de Multiplicar y/o Sumar</h2>
+            <label for="tableNumber">Ingresa un número entero:</label>
+            <input type="number" id="tableNumber" min="1" required>
+            <label for="tableType">Selecciona el tipo de tabla:</label>
+            <select id="tableType">
+                <option value="*">Multiplicación</option>
+                <option value="+">Suma</option>
+            </select>
+            <button onclick="generateTable()">Generar Tabla</button>
+            <div id="tableResult" class="result"></div>
+        </section>
+    </div>
+    <div class="container">
+        <section id="fibonacci">
+            <h2>Generar Secuencia de Fibonacci</h2>
+            <label for="fibonacciInput">Ingresa un número entero positivo:</label>
+            <input type="number" id="fibonacciInput" min="1" required>
+            <button onclick="generateFibonacci()">Generar Secuencia</button>
+            <p id="fibonacciResult" class="result"></p>
+        </section>
+    </div>
+    <div class="container">
+        <!-- Verificar Números Primos -->
+        <section id="primes">
+            <h2>Verificar Números Primos</h2>
+            <label for="primeInputs">Ingresa números enteros positivos (separados por comas):</label>
+            <input type="text" id="primeInputs" placeholder="Ej. 7, 15, 19" />
+            <button onclick="checkPrimes()">Verificar Primos</button>
+            <div id="primeResults" class="result"></div>
+        </section>
+
+        <!-- Verificar Números Perfectos -->
+        <section id="perfect">
+            <h2>Verificar Números Perfectos</h2>
+            <label for="perfectInputs">Ingresa números enteros positivos (separados por comas):</label>
+            <input type="text" id="perfectInputs" placeholder="Ej. 6, 28, 496" />
+            <button onclick="checkPerfects()">Verificar Perfectos</button>
+            <div id="perfectResults" class="result"></div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Roosvelt Castillo</p>
+    </footer>
+<script src="/js/segundaria.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="/js/hol.js"></script>
+
+</body>
+</html>
